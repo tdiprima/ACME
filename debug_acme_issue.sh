@@ -12,6 +12,7 @@ echo
 
 # Check if domain resolves to this server
 echo "1️⃣ Checking DNS resolution..."
+# TODO: This is wrong - prints name and IP:
 DOMAIN_IP=$(dig +short $DOMAIN)
 SERVER_IP=$(curl -s ifconfig.me || curl -s ipinfo.io/ip)
 
